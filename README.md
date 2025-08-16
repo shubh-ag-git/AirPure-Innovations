@@ -1,6 +1,11 @@
-# **AirPure Innovations: Data-Driven Air Quality & Health Analytics Project**
+# AirPure Innovations: Data-Driven Air Quality & Health Analytics Project
 
-![Air Quality Analytics](https://img.shields.io/](https://img.shields.io/badgedge Crisis That Sparked This Project**
+![PowerBI Dashboard](https://img.shields.io/badge/PowerBI-Dashboard-orange)
+![Data Analysis](https://img.shields.io/badge/Data-270K%20Records-blue)
+![Market Size](https://img.shields.io/badge/Market-$1.1B-green)
+![Health Impact](https://img.shields.io/badge/Health-Correlation%200.73-red)
+
+## 🚨 The Crisis That Sparked This Project
 
 > *"Breathing air in New Delhi is equivalent to smoking 1,576 cigarettes per year."*
 
