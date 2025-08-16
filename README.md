@@ -149,9 +149,9 @@ This project demonstrates:
 
 **Found this project compelling?** Let's discuss how data-driven insights can transform other challenging problems.
 
-- 📧 **Email**: [Your Email]
-- 💼 **LinkedIn**: [Your LinkedIn]
-- 🐱 **GitHub**: [Your GitHub]
+📧 **Email**: shagarwalbh@gmail.com  
+💼 **LinkedIn**: [Click Here](https://www.linkedin.com/in/shubh-agarwal-20621224b/)  
+🐙 **GitHub**: [Click Here](https://github.com/shubh-ag-git)
 
 ***
 
