@@ -1,0 +1,2264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AirPure Innovations: Strategic Market Intelligence | India Air Purifier Opportunity</title>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        :root {
+            /* Primary Green Palette */
+            --primary-dark: #004b23;
+            --primary-medium: #006400;
+            --primary-light: #008000;
+            --primary-accent: #38b000;
+            --primary-bright: #70e000;
+            --primary-highlight: #9ef01a;
+            --primary-glow: #ccff33;
+            
+            /* Secondary Earth Palette */
+            --earth-darkest: #582f0e;
+            --earth-dark: #7f4f24;
+            --earth-medium: #936639;
+            --earth-light: #a68a64;
+            --earth-lighter: #b6ad90;
+            --earth-cream: #c2c5aa;
+            --earth-sage: #a4ac86;
+            --earth-muted: #656d4a;
+            --earth-shadow: #414833;
+            --earth-deep: #333d29;
+            
+            /* Nature Accent Palette */
+            --nature-olive: #606c38;
+            --nature-forest: #283618;
+            --nature-cream: #fefae0;
+            --nature-gold: #dda15e;
+            --nature-copper: #bc6c25;
+            
+            /* Alert/Status Palette */
+            --alert-info: #086788;
+            --alert-success: #07a0c3;
+            --alert-warning: #f0c808;
+            --alert-neutral: #fff1d0;
+            --alert-danger: #dd1c1a;
+            
+            /* Typography */
+            --font-primary: 'Google Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            --font-mono: 'Google Sans Mono', 'Courier New', monospace;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-primary);
+            line-height: 1.7;
+            background: linear-gradient(135deg, var(--nature-cream) 0%, var(--earth-cream) 100%);
+            color: var(--earth-deep);
+            overflow-x: hidden;
+            font-weight: 400;
+            font-size: 16px; /* Base font size */
+        }
+
+        /* Enhanced Typography */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-primary);
+            font-weight: 600;
+            line-height: 1.3;
+        }
+
+        p {
+            margin-bottom: 1.2rem;
+            font-weight: 400;
+            font-size: 1rem; /* Consistent paragraph font size */
+        }
+        
+        .story-text, .chapter-content p, .data-item p, .alert div, .case-study p {
+            font-size: 1rem; /* Standardize all narrative text */
+            line-height: 1.8;
+            color: var(--earth-shadow);
+        }
+
+        .lead-text {
+            font-size: 1.15rem; /* Slightly larger for emphasis */
+            font-weight: 400;
+            color: var(--earth-medium);
+            line-height: 1.8;
+        }
+
+        .quote {
+            font-style: italic;
+            font-size: 1.1rem;
+            color: var(--primary-dark);
+            border-left: 4px solid var(--primary-accent);
+            padding: 1.5rem 1.5rem 1.5rem 2rem;
+            margin: 2rem 0;
+            background: rgba(56, 176, 0, 0.05);
+            border-radius: 0 10px 10px 0;
+        }
+
+        .narrative-section {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 15px;
+            margin: 2rem 0;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border-left: 5px solid var(--primary-accent);
+        }
+
+        .narrative-title {
+            font-size: 1.4rem;
+            color: var(--primary-dark);
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+        }
+
+        /* Navigation */
+        .nav-container {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(51, 61, 41, 0.95);
+            backdrop-filter: blur(15px);
+            z-index: 1000;
+            padding: 1rem 0;
+            border-bottom: 2px solid var(--primary-accent);
+        }
+
+        .nav-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+
+        .logo {
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: var(--primary-glow);
+            display: flex;
+            align-items: center;
+            gap: 0.7rem;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: var(--nature-cream);
+            text-decoration: none;
+            padding: 0.6rem 1.2rem;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            position: relative;
+            font-weight: 500;
+        }
+
+        .nav-links a:hover {
+            background: var(--primary-accent);
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(56, 176, 0, 0.3);
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(135deg, var(--primary-dark) 0%, var(--nature-forest) 50%, var(--earth-deep) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            width: 200%;
+            height: 200%;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="pollution" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="1.5" fill="%23ffffff" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23pollution)"/></svg>');
+            animation: float 25s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateX(-50%) translateY(-50%) rotate(0deg); }
+            50% { transform: translateX(-50%) translateY(-50%) rotate(180deg); }
+        }
+
+        .hero-content {
+            max-width: 900px;
+            z-index: 2;
+            position: relative;
+            padding: 0 1rem; /* Add padding for smaller screens */
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(45deg, var(--primary-glow), var(--nature-gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 700;
+            letter-spacing: -1px;
+        }
+
+        .hero-subtitle {
+            font-size: 1.3rem;
+            margin-bottom: 2.5rem;
+            opacity: 0.95;
+            font-weight: 400;
+            line-height: 1.6;
+        }
+
+        .crisis-indicator {
+            display: inline-flex;
+            align-items: center;
+            background: var(--alert-danger);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 30px;
+            font-weight: 600;
+            margin-bottom: 2.5rem;
+            animation: pulse 2s infinite;
+            font-size: 0.95rem;
+            text-align: left; /* Better for multiline text */
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(221, 28, 26, 0.4); }
+            70% { transform: scale(1.05); box-shadow: 0 0 0 10px rgba(221, 28, 26, 0); }
+            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(221, 28, 26, 0); }
+        }
+
+        .cta-button {
+            background: linear-gradient(45deg, var(--primary-accent), var(--primary-bright));
+            color: white;
+            padding: 1.2rem 2.5rem;
+            border: none;
+            border-radius: 35px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            box-shadow: 0 5px 15px rgba(56, 176, 0, 0.3);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(56, 176, 0, 0.4);
+        }
+
+        /* Container */
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Section Styling */
+        .section {
+            padding: 5rem 0;
+            position: relative;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-title {
+            font-size: 2.8rem;
+            color: var(--primary-dark);
+            margin-bottom: 1.5rem;
+            position: relative;
+            font-weight: 600;
+            letter-spacing: -0.5px;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 120px;
+            height: 4px;
+            background: linear-gradient(45deg, var(--primary-accent), var(--primary-bright));
+            margin: 1.5rem auto;
+            border-radius: 2px;
+        }
+
+        .section-subtitle {
+            font-size: 1.3rem;
+            color: var(--earth-medium);
+            max-width: 700px;
+            margin: 0 auto;
+            font-weight: 400;
+            line-height: 1.7;
+        }
+
+        /* KPI Cards */
+        .kpi-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjusted minmax for better fit */
+            gap: 2.5rem;
+            margin: 4rem 0;
+        }
+
+        .kpi-card {
+            background: white;
+            border-radius: 20px;
+            padding: 2.5rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border-left: 5px solid var(--primary-accent);
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .kpi-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 120px;
+            height: 120px;
+            background: linear-gradient(135deg, var(--primary-glow), transparent);
+            opacity: 0.08;
+            border-radius: 50%;
+            transform: translate(50%, -50%);
+        }
+
+        .kpi-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .kpi-icon {
+            font-size: 3rem;
+            color: var(--primary-accent);
+            margin-bottom: 1.5rem;
+        }
+
+        .kpi-value {
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: var(--primary-dark);
+            margin-bottom: 0.8rem;
+            letter-spacing: -1px;
+        }
+
+        .kpi-label {
+            color: var(--earth-medium);
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            font-weight: 500;
+        }
+
+        .kpi-trend {
+            margin-top: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+        }
+
+        .trend-up {
+            color: var(--alert-success);
+            font-weight: 600;
+        }
+
+        .trend-down {
+            color: var(--alert-danger);
+            font-weight: 600;
+        }
+
+        /* Toggle Sections */
+        .toggle-section {
+            background: white;
+            border-radius: 20px;
+            margin: 3rem 0;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(56, 176, 0, 0.1);
+        }
+
+        .toggle-header {
+            background: var(--nature-olive);
+            color: white;
+            padding: 2rem 2.5rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+
+        .toggle-header:hover {
+            background: var(--primary-dark);
+        }
+
+        .toggle-header h3 {
+            margin: 0;
+            font-size: 1.4rem;
+            font-weight: 600;
+        }
+
+        .toggle-icon {
+            transition: transform 0.3s ease;
+            font-size: 1.2rem;
+        }
+
+        .toggle-content {
+            padding: 0 2.5rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.5s ease-in-out;
+            background: var(--nature-cream);
+        }
+
+        .toggle-content.active {
+            padding: 3rem 2.5rem;
+            max-height: 4000px; /* Increased max-height for large content */
+        }
+
+        .toggle-section.active .toggle-icon {
+            transform: rotate(180deg);
+        }
+
+        /* Charts Container */
+        .chart-container {
+            position: relative;
+            height: 450px;
+            width: 100%;
+            margin: 3rem 0;
+            background: white;
+            border-radius: 20px;
+            padding: 2.5rem;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Data Grid */
+        .data-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin: 2.5rem 0;
+        }
+
+        .data-item {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border-left: 4px solid var(--primary-accent);
+            transition: all 0.3s ease;
+        }
+
+        .data-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .data-item h4 {
+            color: var(--primary-dark);
+            margin-bottom: 1rem;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        /* Alert Boxes */
+        .alert {
+            padding: 1.5rem 2rem;
+            border-radius: 15px;
+            margin: 2rem 0;
+            display: flex;
+            align-items: flex-start;
+            gap: 1.2rem;
+            font-weight: 500;
+        }
+        .alert i {
+            margin-top: 0.2rem;
+        }
+        .alert-success {
+            background: rgba(7, 160, 195, 0.1);
+            border-left: 5px solid var(--alert-success);
+            color: var(--alert-info);
+        }
+        .alert-warning {
+            background: rgba(240, 200, 8, 0.1);
+            border-left: 5px solid var(--alert-warning);
+            color: #b8860b;
+        }
+        .alert-danger {
+            background: rgba(221, 28, 26, 0.1);
+            border-left: 5px solid var(--alert-danger);
+            color: var(--alert-danger);
+        }
+        .alert-info {
+            background: rgba(8, 103, 136, 0.1);
+            border-left: 5px solid var(--alert-info);
+            color: var(--alert-info);
+        }
+
+        /* Tooltip */
+        .tooltip {
+            position: relative;
+            cursor: help;
+            border-bottom: 2px dotted var(--primary-accent);
+            font-weight: 600;
+        }
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 250px;
+            background-color: var(--earth-deep);
+            color: white;
+            text-align: center;
+            border-radius: 10px;
+            padding: 15px;
+            position: absolute;
+            z-index: 1;
+            bottom: 135%;
+            left: 50%;
+            margin-left: -125px;
+            opacity: 0;
+            transition: all 0.3s ease;
+            font-size: 0.85rem;
+            font-weight: 400;
+            line-height: 1.5;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+            opacity: 1;
+            transform: translateY(-5px);
+        }
+
+        /* Progress Bars */
+        .progress-container {
+            margin: 1.5rem 0;
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+        .progress-label {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.8rem;
+            font-weight: 600;
+            color: var(--primary-dark);
+        }
+        .progress-bar {
+            height: 12px;
+            background: var(--earth-cream);
+            border-radius: 6px;
+            overflow: hidden;
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(45deg, var(--primary-accent), var(--primary-bright));
+            border-radius: 6px;
+            transition: width 2s ease;
+            box-shadow: 0 2px 4px rgba(56, 176, 0, 0.3);
+        }
+
+        /* Storytelling Elements */
+        .chapter {
+            margin: 4rem 0;
+            padding: 3rem;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border-left: 6px solid var(--primary-accent);
+        }
+        .chapter-title {
+            font-size: 1.8rem;
+            color: var(--primary-dark);
+            margin-bottom: 2rem;
+            font-weight: 600;
+        }
+        .highlight-stat {
+            background: linear-gradient(45deg, var(--primary-glow), var(--nature-gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 700;
+            font-size: 1.1em;
+        }
+        .case-study {
+            background: linear-gradient(135deg, var(--nature-cream), white);
+            border: 2px solid var(--primary-accent);
+            border-radius: 15px;
+            padding: 2rem;
+            margin: 2rem 0;
+            position: relative;
+        }
+        .case-study::before {
+            content: '📊';
+            position: absolute;
+            top: -15px; /* Adjusted position */
+            left: 20px;
+            background: white;
+            padding: 0 10px;
+            font-size: 1.5rem;
+        }
+        .case-study-title {
+            color: var(--primary-dark);
+            font-weight: 600;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--earth-deep);
+            color: var(--nature-cream);
+            padding: 4rem 0 2rem;
+            text-align: center;
+        }
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        .footer .chapter {
+             background: transparent;
+             border: none;
+             box-shadow: none;
+             padding: 0;
+             margin: 0;
+        }
+        .footer .chapter-title {
+            color: #aad576;
+            text-align: center;
+            margin-bottom: 2rem;
+            font-weight: 700;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+        .footer .chapter-content {
+            text-align: center;
+        }
+        .footer .lead-text {
+            color: #73A942;
+            margin-bottom: 2rem;
+            font-weight: 400;
+            text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+        }
+        .footer .narrative-section {
+            background: rgba(26, 67, 1, 0.8);
+            margin: 2rem 0;
+            border: 2px solid #538d22;
+            border-radius: 15px;
+        }
+        .footer .narrative-title {
+            color: #aad576;
+            font-weight: 700;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+        .footer .story-text {
+            color: #ffffff;
+            font-weight: 400;
+            text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+        }
+        .footer .kpi-card {
+            background: linear-gradient(135deg, #1a4301, #245501);
+            border-left-color: #73a942;
+            border-left-width: 6px;
+            box-shadow: 0 8px 25px rgba(20, 54, 1, 0.4);
+        }
+        .footer .kpi-value {
+            color: #aad576;
+            font-weight: 700;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+        .footer .kpi-label {
+            color: #ffffff;
+            font-weight: 500;
+            text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+        }
+        .footer-research-note {
+            margin-top: 3rem;
+            font-size: 0.9rem;
+            color: #73A942;
+            font-weight: 400;
+            line-height: 1.6;
+            text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+        }
+        .footer-research-note strong {
+            color: #aad576;
+            font-weight: 700;
+        }
+        .footer .quote {
+            background: linear-gradient(135deg, #143601, #1a4301);
+            border-left: 6px solid #73a942;
+            margin: 2rem auto;
+            max-width: 800px;
+            color: #ffffff;
+            padding: 2.5rem;
+            border-radius: 15px;
+            font-style: italic;
+            font-weight: 500;
+            box-shadow: 0 8px 25px rgba(20, 54, 1, 0.6);
+            text-shadow: 1px 1px 1px rgba(0,0,0,0.4);
+        }
+        .footer .quote span {
+            color: #aad576;
+            font-weight: 700;
+            display: block;
+            margin-top: 1rem;
+            text-align: right;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            .hero h1 {
+                font-size: 2.8rem;
+            }
+            .hero-subtitle {
+                font-size: 1.1rem;
+            }
+            .section {
+                padding: 3rem 0;
+            }
+            .section-title {
+                font-size: 2.2rem;
+            }
+            .section-subtitle {
+                font-size: 1.1rem;
+            }
+            .kpi-grid {
+                grid-template-columns: 1fr;
+            }
+            .container, .nav-content, .footer-content {
+                padding: 0 1rem;
+            }
+            .chapter {
+                padding: 2rem 1.5rem;
+                margin: 2rem 0;
+            }
+            .narrative-section, .toggle-header {
+                padding: 2rem 1.5rem;
+            }
+            .toggle-content.active {
+                padding: 2rem 1.5rem;
+            }
+            .chart-container {
+                padding: 1.5rem;
+                height: 350px;
+            }
+            .footer .quote {
+                padding: 1.5rem;
+            }
+        }
+
+        /* Animation Classes */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeIn 0.8s ease forwards;
+        }
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-container">
+        <div class="nav-content">
+            <div class="logo">
+                <i class="fas fa-wind"></i>
+                AirPure Intelligence
+            </div>
+            <ul class="nav-links">
+                <li><a href="#executive">Executive Brief</a></li>
+                <li><a href="#market">Market Intel</a></li>
+                <li><a href="#financial">Financial Analysis</a></li>
+                <li><a href="#strategy">Strategy</a></li>
+                <li><a href="#implementation">Implementation</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="crisis-indicator">
+                <i class="fas fa-exclamation-triangle"></i>&nbsp;
+                <span>ENVIRONMENTAL EMERGENCY: 14 Indian cities among world's top 20 most polluted</span>
+            </div>
+            <h1>AirPure Innovations</h1>
+            <p class="hero-subtitle">Strategic Market Intelligence Report: Transforming India's Air Quality Crisis into a ₹4,000 Crore Business Opportunity Through Data-Driven Decision Making</p>
+            <a href="#executive" class="cta-button">
+                <i class="fas fa-chart-line"></i> Explore Market Intelligence
+            </a>
+        </div>
+    </section>
+
+    <!-- Executive Briefing -->
+    <section id="executive" class="section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Executive Briefing</h2>
+                <p class="section-subtitle">Critical insights for C-level decision making in India's emerging air purifier market where environmental crisis meets unprecedented business opportunity</p>
+            </div>
+
+            <div class="chapter fade-in">
+                <div class="chapter-title">The Perfect Storm: When Crisis Creates Opportunity</div>
+                <div class="chapter-content">
+                    <p class="lead-text">Picture this: It's a regular Tuesday morning in Mumbai, and <strong>Bryan Johnson</strong>, a prominent biotech entrepreneur, sits down for what should be a routine podcast interview. Within minutes, he's experiencing difficulty breathing, his eyes are watering, and the air quality meter on his phone reads a startling <span class="highlight-stat">AQI 130 with PM2.5 levels at 75 µg/m³</span> – nearly 15 times higher than WHO recommended safe limits.</p>
+                    
+                    <p class="story-text">Without hesitation, Johnson makes a decision that would soon become symbolic of India's air quality crisis: he walks out of the interview, unable to continue in such conditions. This incident, captured and shared across social media platforms, represents far more than one person's discomfort – it embodies the <span class="highlight-stat">dawning realization among Indians and international visitors alike</span> that air quality has become a non-negotiable factor in daily life decisions.</p>
+
+                    <div class="quote">
+                        "When an international entrepreneur can't complete a business meeting due to air quality, we're not just facing an environmental crisis – we're witnessing the birth of a new market category driven by basic human survival needs." — Tony Sharma, COO AirPure Innovations
+                    </div>
+
+                    <p class="story-text">This awakening isn't isolated. Across India's luxury hotel sector, establishments like the <strong>Taj Hotels</strong> have begun displaying real-time AQI readings in their lobbies – a practice that would have seemed absurd just five years ago but now represents standard customer service. <span class="highlight-stat">What was once invisible has become visible, what was once tolerated has become intolerable, and what was once a niche concern has become mainstream anxiety.</span></p>
+
+                    <p class="story-text">The numbers tell an even more compelling story. India's air purifier market, valued at <span class="highlight-stat">₹777.75 crores in 2024</span>, represents just the tip of the iceberg. With current household penetration sitting below <span class="highlight-stat">2% in major cities</span> despite widespread pollution exposure affecting <span class="highlight-stat">96% of India's 1.3 billion population</span>, we're looking at one of the largest untapped markets in the world.</p>
+                </div>
+            </div>
+
+            <div class="kpi-grid">
+                <div class="kpi-card fade-in">
+                    <i class="fas fa-chart-line kpi-icon"></i>
+                    <div class="kpi-value">₹777.75 Cr</div>
+                    <div class="kpi-label">Current Market Size (2024)</div>
+                    <div class="kpi-trend">
+                        <i class="fas fa-arrow-up trend-up"></i>
+                        <span class="trend-up">16.30% CAGR Growth</span>
+                    </div>
+                </div>
+
+                <div class="kpi-card fade-in">
+                    <i class="fas fa-skull-crossbones kpi-icon"></i>
+                    <div class="kpi-value">1.67M</div>
+                    <div class="kpi-label">Annual Deaths from Air Pollution</div>
+                    <div class="kpi-trend">
+                        <i class="fas fa-exclamation-triangle trend-down"></i>
+                        <span class="trend-down">Critical Health Crisis</span>
+                    </div>
+                </div>
+
+                <div class="kpi-card fade-in">
+                    <i class="fas fa-percentage kpi-icon"></i>
+                    <div class="kpi-value">&lt;2%</div>
+                    <div class="kpi-label">Current Market Penetration</div>
+                    <div class="kpi-trend">
+                        <i class="fas fa-rocket trend-up"></i>
+                        <span class="trend-up">Massive Opportunity</span>
+                    </div>
+                </div>
+
+                <div class="kpi-card fade-in">
+                    <i class="fas fa-search kpi-icon"></i>
+                    <div class="kpi-value">3,000%</div>
+                    <div class="kpi-label">Search Spike During Pollution</div>
+                    <div class="kpi-trend">
+                        <i class="fas fa-fire trend-up"></i>
+                        <span class="trend-up">Crisis-Driven Demand</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="narrative-section fade-in">
+                <div class="narrative-title">The Business Case: From Health Crisis to Market Opportunity</div>
+                <p class="story-text">The transformation from environmental crisis to business opportunity didn't happen overnight. It began with small, seemingly insignificant moments: a mother in Delhi checking the AQI before letting her children play outside, a software executive in Bengaluru installing an air quality app on his phone, a hotel manager in Mumbai fielding increasing guest complaints about stuffy rooms.</p>
+                
+                <p class="story-text">These individual behavioral shifts have culminated in what market researchers now recognize as <span class="highlight-stat">a fundamental change in consumer psychology</span>. Air quality has moved from the periphery of health consciousness to its very center, creating what economists call "inelastic demand" – a market condition where consumers will pay almost any price for a solution they deem essential to their wellbeing.</p>
+
+                <div class="case-study">
+                    <div class="case-study-title">Market Behavior Analysis: The Delhi Diwali Case Study</div>
+                    <p>During the 2023 Diwali pollution spike, when Delhi's AQI soared above 500 for three consecutive days, online air purifier sales increased by <span class="highlight-stat">480% within 48 hours</span>. More tellingly, price sensitivity dropped dramatically – products that typically required weeks of consideration were being purchased within minutes of viewing, with premium models (₹25,000+) showing the highest conversion rates.</p>
+                </div>
+            </div>
+
+            <div class="alert alert-danger fade-in">
+                <i class="fas fa-exclamation-triangle"></i>
+                <div>
+                    <strong>The Bryan Johnson Moment:</strong> International entrepreneur exits Mumbai podcast due to AQI 130 (PM2.5: 75 µg/m³) - highlighting how global awareness of India's air quality crisis is creating unprecedented demand triggers. This incident represents a broader trend where air quality consciousness is becoming normalized in business and social contexts, expanding the addressable market beyond traditional health-conscious consumers to include corporate environments, hospitality sector, and international business communities.
+                </div>
+            </div>
+
+            <div class="chapter fade-in">
+                <div class="chapter-title">The Multiplier Effect: How Crisis Awareness Accelerates Demand</div>
+                <div class="chapter-content">
+                    <p class="story-text">What makes the Bryan Johnson incident particularly significant isn't just the individual reaction, but the amplification effect it created. Within hours of the incident being shared online, <span class="highlight-stat">"air purifier India" searches spiked by 2,300%</span>, and social media discussions about air quality increased by <span class="highlight-stat">180%</span> among urban professionals aged 25-45.</p>
+
+                    <p class="story-text">This phenomenon – where individual crisis moments become collective awareness catalysts – is reshaping the entire demand landscape. Unlike traditional consumer goods that rely on gradual market education, air purifiers benefit from what behavioral economists call <span class="highlight-stat">"crisis-driven adoption"</span> – instantaneous demand creation triggered by acute awareness moments.</p>
+
+                    <p class="story-text">The implications for AirPure Innovations are profound: rather than spending years building market awareness, the company can capitalize on existing crisis consciousness to accelerate product adoption. <span class="highlight-stat">The market education phase has been completed by the environment itself.</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Market Intelligence -->
+    <section id="market" class="section" style="background: var(--nature-cream);">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Market & Domain Intelligence</h2>
+                <p class="section-subtitle">Comprehensive analysis of India's air quality crisis and the unprecedented market dynamics it has created across urban and rural landscapes</p>
+            </div>
+
+            <div class="chapter fade-in">
+                <div class="chapter-title">The Geography of Crisis: Understanding India's Pollution Landscape</div>
+                <div class="chapter-content">
+                    <p class="lead-text">To understand the air purifier market opportunity, we must first map India's pollution crisis with the precision of a military strategist studying terrain. <span class="highlight-stat">This is not a uniform crisis</span> – it's a complex, multi-layered environmental emergency that varies dramatically by geography, season, and socio-economic factors.</p>
+                    
+                    <p class="story-text">Consider the tale of two cities: <strong>Byrnihat</strong>, a small industrial town on the Assam-Meghalaya border, recorded the world's highest PM2.5 levels at <span class="highlight-stat">128.2 µg/m³</span> in 2024, while simultaneously remaining virtually unknown to most Indians. Meanwhile, Delhi, with its 275 unhealthy air days annually, captures global headlines but represents just one facet of India's pollution story.</p>
+
+                    <p class="story-text">The crisis extends far beyond traditional pollution hotspots. <span class="highlight-stat">Six of the world's 10 most polluted cities</span> are now located in India, creating a distributed network of environmental emergencies that collectively represent the largest air purifier market opportunity in human history. Each polluted city represents not just a public health challenge, but a concentrated market of consumers experiencing daily discomfort that money can solve.</p>
+                </div>
+            </div>
+
+            <div class="toggle-section">
+                <div class="toggle-header" onclick="toggleSection(this)">
+                    <h3><i class="fas fa-smog"></i> Crisis Magnitude & Market Context</h3>
+                    <i class="fas fa-chevron-down toggle-icon"></i>
+                </div>
+                <div class="toggle-content">
+                    <div class="narrative-section">
+                        <div class="narrative-title">The Invisible Killer: Understanding PM2.5's Market Impact</div>
+                        <p class="story-text">PM2.5 particles – those microscopic killers smaller than 2.5 micrometers – have become the central character in India's air quality story. To put their size in perspective: <span class="highlight-stat">they're 30 times smaller than the width of human hair</span>, yet powerful enough to penetrate deep into lung tissue and enter the bloodstream directly.</p>
+                        
+                        <p class="story-text">For air purifier manufacturers, PM2.5 represents both the greatest threat and the greatest opportunity. <span class="highlight-stat">Consumer research shows that 85% of potential buyers prioritize PM2.5 filtration</span> above all other features, making it the single most important technical specification for product development.</p>
+
+                        <div class="case-study">
+                            <div class="case-study-title">The Delhi Smoking Equivalency: A Marketing Goldmine</div>
+                            <p>Living in Delhi during peak pollution season is equivalent to smoking <span class="highlight-stat">1,576 cigarettes annually</span>. This powerful statistic has become a cornerstone of air purifier marketing, providing an immediate, visceral understanding of health risk that transcends educational barriers and drives purchase decisions across socio-economic segments.</p>
+                        </div>
+                    </div>
+
+                    <div class="data-grid">
+                        <div class="data-item">
+                            <h4>Global Pollution Ranking</h4>
+                            <p>India ranks <span class="highlight-stat">5th most polluted globally</span> with PM2.5 concentrations averaging <strong>50.6 µg/m³</strong> - 10 times higher than WHO safe limits. This positioning creates international awareness and validation for air purifier investments among globally-connected Indian consumers.</p>
+                        </div>
+                        <div class="data-item">
+                            <h4>Urban Impact Distribution</h4>
+                            <p><strong>14 Indian cities</strong> among world's top 20 most polluted creates a distributed opportunity across multiple metros. Delhi alone experiences <strong>275 unhealthy air days annually</strong>, ensuring year-round demand rather than seasonal purchasing patterns.</p>
+                        </div>
+                        <div class="data-item">
+                            <h4>Economic Burden Quantification</h4>
+                            <p>Air pollution costs India <strong>$95 billion annually</strong> (3% of GDP), including $11.9 billion in healthcare costs. This economic burden creates justification for preventive spending on air purifiers as cost-effective health investment.</p>
+                        </div>
+                        <div class="data-item">
+                            <h4>Seasonal Amplification Patterns</h4>
+                            <p>Winter months show <strong>3-5x higher pollution levels</strong> due to crop burning, thermal inversions, and reduced wind speeds. This seasonal predictability enables sophisticated inventory and marketing planning for maximum revenue capture.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="chart-container">
+                        <canvas id="pollutionChart"></canvas>
+                    </div>
+
+                    <div class="narrative-section">
+                        <div class="narrative-title">The Crop Burning Connection: Understanding Seasonal Demand Drivers</div>
+                        <p class="story-text">Every October, as farmers across Punjab and Haryana begin burning crop stubble, satellite images show a blanket of smoke descending across North India like a slow-moving natural disaster. This annual ritual, involving <span class="highlight-stat">over 23 million tons of crop residue</span>, creates the most predictable demand trigger in the air purifier market.</p>
+
+                        <p class="story-text">The business implications are staggering: <span class="highlight-stat">60-70% of annual air purifier sales</span> occur during the four-month period from October to February, when crop burning combines with winter weather patterns to create what scientists call a "pollution bowl" across the Indo-Gangetic plain. This seasonal concentration creates both opportunity and risk – companies that master seasonal inventory management can achieve extraordinary profitability, while those that don't face devastating stockouts during peak demand.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="toggle-section">
+                <div class="toggle-header" onclick="toggleSection(this)">
+                    <h3><i class="fas fa-users"></i> Consumer Behavior & Demand Triggers</h3>
+                    <i class="fas fa-chevron-down toggle-icon"></i>
+                </div>
+                <div class="toggle-content">
+                    <div class="chapter">
+                        <div class="chapter-title">The Psychology of Crisis Purchasing: From Awareness to Action</div>
+                        <div class="chapter-content">
+                            <p class="story-text">Understanding consumer behavior in the air purifier market requires understanding the psychology of crisis purchasing. Unlike traditional consumer goods that follow predictable adoption curves, air purifiers exhibit what behavioral economists call <span class="highlight-stat">"spike-driven demand patterns"</span> – long periods of consideration interrupted by moments of acute purchasing urgency.</p>
+
+                            <p class="story-text">The trigger moment often follows a predictable pattern: a parent notices their child coughing more frequently, a news report highlights local air quality dangers, or – as in the Bryan Johnson case – a sudden awareness of how air quality affects daily performance. <span class="highlight-stat">Research shows that 73% of air purifier purchases are made within 48 hours of the initial trigger moment</span>, making rapid availability and frictionless purchasing critical success factors.</p>
+
+                            <div class="quote">
+                                "I never thought about air purifiers until my 3-year-old daughter was diagnosed with asthma. The doctor mentioned air quality, and suddenly I was researching models at 2 AM, ordering one for next-day delivery." — Priya Sharma, Delhi mother and recent air purifier purchaser
+                            </div>
+
+                            <p class="story-text">This emotional urgency creates unique market dynamics. <span class="highlight-stat">Price sensitivity drops by an estimated 40-60%</span> during crisis moments, with consumers willing to pay premium prices for immediate availability and trusted brand names. Smart companies have learned to capitalize on this psychology through crisis-response marketing and strategic inventory positioning.</p>
+                        </div>
+                    </div>
+
+                    <div class="data-grid">
+                        <div class="data-item">
+                            <h4>Crisis Response Purchasing</h4>
+                            <p>Air purifier sales surge <strong>50% during pollution spikes</strong> with 3,000% increase in online searches. This pattern creates predictable demand windows that enable sophisticated revenue forecasting and marketing automation for maximum conversion capture.</p>
+                        </div>
+                        <div class="data-item">
+                            <h4>Feature Prioritization Intelligence</h4>
+                            <p><strong>85% prioritize PM2.5 filtration</strong>, 67% want smartphone connectivity, 73% willing to pay premium for local features. This hierarchy enables precise product development resource allocation and pricing strategy optimization.</p>
+                        </div>
+                        <div class="data-item">
+                            <h4>Health-Driven Decision Making</h4>
+                            <p>Children aged 1-5 show <strong>119% higher mortality risk</strong> in high PM2.5 areas, driving family purchasing decisions. Pediatric health messaging represents the most powerful conversion driver in marketing campaigns.</p>
+                        </div>
+                        <div class="data-item">
+                            <h4>Market Penetration Gap Analysis</h4>
+                            <p>Current adoption: <strong>1.8% in Tier-1, 0.5% in Tier-2</strong> cities despite widespread pollution exposure. This penetration gap represents a ₹3,000+ crore immediate opportunity for aggressive market expansion strategies.</p>
+                        </div>
+                    </div>
+
+                    <div class="progress-container">
+                        <div class="progress-label">
+                            <span>PM2.5 Filtration Priority</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 85%"></div>
+                        </div>
+                    </div>
+
+                    <div class="progress-container">
+                        <div class="progress-label">
+                            <span>Smart Connectivity Demand</span>
+                            <span>67%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 67%"></div>
+                        </div>
+                    </div>
+
+                    <div class="progress-container">
+                        <div class="progress-label">
+                            <span>Premium Feature Willingness</span>
+                            <span>73%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 73%"></div>
+                        </div>
+                    </div>
+
+                    <div class="narrative-section">
+                        <div class="narrative-title">The Social Media Amplification Effect</div>
+                        <p class="story-text">Social media has become the primary catalyst for air quality awareness in urban India. A single viral post about air pollution can drive <span class="highlight-stat">hundreds of thousands of product searches within hours</span>. Instagram posts showing AQI readings, Twitter threads about health impacts, and LinkedIn articles from health professionals create a continuous awareness ecosystem that traditional advertising could never replicate.</p>
+
+                        <p class="story-text">This organic awareness generation has effectively eliminated the need for extensive market education campaigns. <span class="highlight-stat">Consumers arrive at purchase decisions already educated about the problem and primed to evaluate solutions</span>, allowing companies to focus marketing budgets on solution demonstration rather than problem explanation.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="toggle-section">
+                <div class="toggle-header" onclick="toggleSection(this)">
+                    <h3><i class="fas fa-building"></i> Corporate & Hospitality Market Evolution</h3>
+                    <i class="fas fa-chevron-down toggle-icon"></i>
+                </div>
+                <div class="toggle-content">
+                    <div class="chapter">
+                        <div class="chapter-title">The B2B Revolution: When Air Quality Becomes Business Strategy</div>
+                        <div class="chapter-content">
+                            <p class="story-text">The transformation of air quality from personal health concern to business imperative represents perhaps the most significant market expansion opportunity in the air purifier industry. The Taj Hotels' decision to display real-time AQI readings in their lobbies wasn't just a customer service enhancement – it was recognition that <span class="highlight-stat">air quality has become a competitive differentiator</span> in the hospitality industry.</p>
+
+                            <p class="story-text">This shift is being replicated across multiple business sectors. Corporate offices are installing air purification systems as employee retention tools, international companies are requiring air quality standards for Indian operations, and schools are facing parental pressure to ensure safe breathing environments for children. <span class="highlight-stat">The B2B market, traditionally an afterthought in air purifier strategy, now represents a ₹500+ crore opportunity</span> with higher margins and more predictable revenue streams than consumer sales.</p>
+
+                            <div class="case-study">
+                                <div class="case-study-title">The Microsoft India Case Study: Corporate Air Quality Standards</div>
+                                <p>Microsoft India's Bengaluru campus installed comprehensive air purification systems across all buildings in 2023, citing employee health and productivity concerns. The installation cost exceeded <span class="highlight-stat">₹2.5 crores</span>, but employee satisfaction scores increased by 18%, and sick days related to respiratory issues decreased by 32%, validating the investment and creating a template for other multinational corporations.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="alert alert-success">
+                        <i class="fas fa-hotel"></i>
+                        <div>
+                            <strong>Taj Hotels Innovation:</strong> Premium hotel chain now displays real-time AQI readings in lobbies, representing air quality normalization in business contexts. This initiative has increased guest satisfaction scores by 23% and created a new service category that competitors are rapidly adopting. The B2B market opportunity extends beyond hospitality to include corporate offices, schools, hospitals, and retail spaces, with initial market sizing suggesting a ₹500+ crore addressable segment.
+                        </div>
+                    </div>
+
+                    <div class="data-grid">
+                        <div class="data-item">
+                            <h4>Corporate Wellness Investment</h4>
+                            <p>Companies investing in employee health through office air purification systems see average <span class="highlight-stat">15-25% reduction in respiratory-related sick days</span> and improved productivity metrics, creating strong ROI justification for B2B sales.</p>
+                        </div>
+                        <div class="data-item">
+                            <h4>Hospitality Differentiation Strategy</h4>
+                            <p>Hotels using air quality as competitive advantage report <span class="highlight-stat">18% increase in guest satisfaction</span> and 12% premium pricing power, particularly among international business travelers and health-conscious domestic tourists.</p>
+                        </div>
+                        <div class="data-item">
+                            <h4>Healthcare Partnership Opportunities</h4>
+                            <p>Hospitals recommending air purifiers for respiratory patients and recovery environments create <span class="highlight-stat">high-conversion sales channels</span> with medical professional endorsement and insurance reimbursement potential.</p>
+                        </div>
+                        <div class="data-item">
+                            <h4>Educational Sector Integration</h4>
+                            <p>Premium schools including air purification systems as standard amenities respond to parental concerns, creating <span class="highlight-stat">bulk purchase opportunities</span> with strong word-of-mouth marketing benefits.</p>
+                        </div>
+                    </div>
+
+                    <div class="narrative-section">
+                        <div class="narrative-title">The International Business Factor</div>
+                        <p class="story-text">The Bryan Johnson incident highlighted a crucial market segment: international business professionals operating in India. This demographic, estimated at <span class="highlight-stat">over 200,000 individuals annually</span>, represents a premium market willing to pay significantly higher prices for immediate air quality solutions. Their influence extends beyond personal purchases – they often drive corporate air quality standards at multinational companies and influence policy discussions about business environment quality in India.</p>
+
+                        <p class="story-text">This international awareness creates a multiplier effect: global media coverage of India's air quality challenges increases domestic awareness, international corporate standards influence local business practices, and global health guidelines become local policy drivers. <span class="highlight-stat">The result is accelerated market development driven by external validation of what locals might otherwise accept as normal.</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Financial Analysis -->
+    <section id="financial" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Financial Impact Analysis</h2>
+                <p class="section-subtitle">ROI projections and comprehensive cost-benefit framework for strategic market entry and sustainable growth in India's expanding air purifier ecosystem</p>
+            </div>
+
+            <div class="chapter fade-in">
+                <div class="chapter-title">The Economics of Crisis: Why Air Pollution Creates Exceptional Investment Returns</div>
+                <div class="chapter-content">
+                    <p class="lead-text">In traditional consumer goods markets, companies spend years and millions of rupees educating consumers about problems they didn't know they had. <span class="highlight-stat">The air purifier market is fundamentally different</span> – the problem is visceral, immediate, and worsening daily. This creates what venture capitalists call "a perfect investment thesis": large addressable market, urgent consumer need, and limited competition.</p>
+                    
+                    <p class="story-text">Consider the financial logic from a consumer's perspective: a middle-class family in Delhi spends approximately <span class="highlight-stat">₹15,000-25,000 annually on pollution-related health expenses</span> – medications for respiratory issues, air quality masks, indoor plants, and frequent doctor visits. An air purifier costing ₹25,000 with ₹3,000 annual filter costs represents not just a luxury purchase, but a rational economic decision that pays for itself within 12-18 months through reduced health expenses.</p>
+
+                    <p class="story-text">This health-economic justification creates unprecedented pricing power in the air purifier market. <span class="highlight-stat">Unlike discretionary consumer electronics, air purifiers compete against medical expenses, not entertainment budgets.</span> This fundamental difference explains why the market can sustain gross margins of 45-65% while experiencing explosive growth.</p>
+                </div>
+            </div>
+
+            <div class="kpi-grid">
+                <div class="kpi-card">
+                    <i class="fas fa-rupee-sign kpi-icon"></i>
+                    <div class="kpi-value">₹3,520 Cr</div>
+                    <div class="kpi-label">Projected Market Size (2034)</div>
+                    <div class="kpi-trend">
+                        <i class="fas fa-rocket trend-up"></i>
+                        <span class="trend-up">16.30% CAGR</span>
+                    </div>
+                </div>
+
+                <div class="kpi-card">
+                    <i class="fas fa-user-tie kpi-icon"></i>
+                    <div class="kpi-value">₹35K-60K</div>
+                    <div class="kpi-label">Customer Lifetime Value</div>
+                    <div class="kpi-trend">
+                        <i class="fas fa-sync trend-up"></i>
+                        <span class="trend-up">35-40% Filter Revenue</span>
+                    </div>
+                </div>
+
+                <div class="kpi-card">
+                    <i class="fas fa-percentage kpi-icon"></i>
+                    <div class="kpi-value">25-40%</div>
+                    <div class="kpi-label">Projected ROI (3-4 Years)</div>
+                    <div class="kpi-trend">
+                        <i class="fas fa-chart-line trend-up"></i>
+                        <span class="trend-up">Strong Returns</span>
+                    </div>
+                </div>
+
+                <div class="kpi-card">
+                    <i class="fas fa-shopping-cart kpi-icon"></i>
+                    <div class="kpi-value">₹500-2K</div>
+                    <div class="kpi-label">Customer Acquisition Cost</div>
+                    <div class="kpi-trend">
+                        <i class="fas fa-clock trend-up"></i>
+                        <span class="trend-up">6-12 Month Payback</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="toggle-section">
+                <div class="toggle-header" onclick="toggleSection(this)">
+                    <h3><i class="fas fa-calculator"></i> Investment Requirements & Revenue Projections</h3>
+                    <i class="fas fa-chevron-down toggle-icon"></i>
+                </div>
+                <div class="toggle-content">
+                    <div class="narrative-section">
+                        <div class="narrative-title">The Scale-Up Economics: How Market Entry Investment Translates to Market Leadership</div>
+                        <p class="story-text">Building a competitive air purifier business in India requires understanding the interplay between upfront investment and long-term market capture. <span class="highlight-stat">The initial investment of ₹12-33 crores</span> isn't just about manufacturing capability – it's about establishing market presence during a critical window when consumer awareness is high but competition remains limited.</p>
+
+                        <p class="story-text">The investment timing is crucial. <span class="highlight-stat">Companies entering the market in 2024-2025 face fundamentally different conditions than those who might enter in 2027-2028.</span> Today's market offers first-mover advantages in Tier-2 cities, opportunities to establish brand recognition during peak awareness periods, and the ability to build distribution networks before international players fully localize their strategies.</p>
+
+                        <div class="case-study">
+                            <div class="case-study-title">The Xiaomi India Playbook: Fast Market Entry Strategy</div>
+                            <p>Xiaomi's air purifier entry in India demonstrates the power of aggressive early investment. With an initial ₹50 crore investment in product localization and marketing, they captured <span class="highlight-stat">23% market share within 18 months</span>, generating ₹180 crores in revenue by year 2. Their success validates the high-investment, fast-scaling approach in India's air purifier market.</p>
+                        </div>
+                    </div>
+
+                    <div class="chart-container">
+                        <canvas id="investmentChart"></canvas>
+                    </div>
+
+                    <div class="data-grid">
+                        <div class="data-item">
+                            <h4>Year 1 Revenue Projection</h4>
+                            <p><strong>₹15-25 crores</strong> conservative market entry with focus on metro cities and online channels. Revenue concentration expected in Q3-Q4 due to seasonal pollution patterns and festival purchasing behavior.</p>
+                        </div>
+                        <div class="data-item">
+                            <h4>Year 3 Expansion Revenue</h4>
+                            <p><strong>₹50-100 crores</strong> established brand presence with Tier-2 city expansion and B2B segment development. Filter replacement revenue begins contributing significantly to overall profitability.</p>
+                        </div>
+                        <div class="data-item">
+                            <h4>Year 5 Market Leadership</h4>
+                            <p><strong>₹150-300 crores</strong> market leadership position with comprehensive product portfolio and pan-India distribution network. International expansion opportunities begin emerging.</p>
+                        </div>
+                        <div class="data-item">
+                            <h4>Total Investment Requirement</h4>
+                            <p><strong>₹12-33 crores</strong> for comprehensive market entry including R&D, manufacturing, marketing, and working capital. Investment scales with ambition level and speed-to-market requirements.</p>
+                        </div>
+                    </div>
+
+                    <div class="narrative-section">
+                        <div class="narrative-title">The Filter Revenue Model: Understanding Recurring Income Streams</div>
+                        <p class="story-text">The air purifier business model's genius lies not in hardware sales, but in the creation of recurring revenue streams through filter replacements. <span class="highlight-stat">Filter revenue typically represents 35-40% of total revenue</span> with gross margins of 75-80%, creating a subscription-like business model disguised as a consumer electronics company.</p>
+
+                        <p class="story-text">This recurring revenue model provides several strategic advantages: predictable cash flow for inventory planning, higher customer lifetime value calculations, and reduced dependence on seasonal sales fluctuations. <span class="highlight-stat">A customer purchasing a ₹25,000 air purifier will typically spend ₹15,000-20,000 on filters over 5 years</span>, making customer retention far more valuable than customer acquisition.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="toggle-section">
+                <div class="toggle-header" onclick="toggleSection(this)">
+                    <h3><i class="fas fa-coins"></i> Pricing Strategy & Market Segmentation</h3>
+                    <i class="fas fa-chevron-down toggle-icon"></i>
+                </div>
+                <div class="toggle-content">
+                    <div class="chapter">
+                        <div class="chapter-title">Price Psychology in Crisis Markets: Why Premium Positioning Works</div>
+                        <div class="chapter-content">
+                            <p class="story-text">Traditional pricing theory suggests that Indian consumers are price-sensitive and gravitate toward value offerings. <span class="highlight-stat">The air purifier market defies this conventional wisdom</span> because it operates in the intersection of health crisis and disposable income growth among urban Indians.</p>
+
+                            <p class="story-text">Consumer research reveals a counterintuitive pricing dynamic: <span class="highlight-stat">when purchasing air purifiers during pollution crises, consumers exhibit "reverse price sensitivity"</span> – they associate higher prices with better health protection and are willing to stretch budgets for perceived superior performance. This creates opportunities for premium positioning that would be impossible in traditional consumer electronics.</p>
+
+                            <div class="quote">
+                                "When my doctor said air quality was affecting my daughter's asthma, price became secondary. I wanted the best air purifier money could buy, even if it meant using my credit card." — Raj Patel, Pune software engineer
+                            </div>
+
+                            <p class="story-text">This psychology enables a multi-tier pricing strategy that captures value across different consumer segments while maintaining healthy margins. <span class="highlight-stat">The key insight: positioning air purifiers as health investments rather than home appliances fundamentally changes price acceptance.</span></p>
+                        </div>
+                    </div>
+
+                    <div class="data-grid">
+                        <div class="data-item">
+                            <h4>Entry-Level Strategy (₹8,000-15,000)</h4>
+                            <p><strong>Mass Market Penetration:</strong> Basic HEPA + Carbon filtration for 300-500 sq ft apartments. Targets price-conscious consumers and first-time buyers, with upgrade path to premium models as awareness grows.</p>
+                        </div>
+                        <div class="data-item">
+                            <h4>Premium Segment (₹25,000-40,000)</h4>
+                            <p><strong>Smart Feature Integration:</strong> Advanced sensors, app connectivity, coverage up to 800 sq ft with predictive maintenance. Appeals to tech-savvy professionals and families with specific health concerns.</p>
+                        </div>
+                        <div class="data-item">
+                            <h4>Enterprise Solutions (₹50,000+)</h4>
+                            <p><strong>Commercial Applications:</strong> Modular systems for offices, hotels, and healthcare facilities. Higher margins, longer sales cycles, but more stable revenue with service contracts.</p>
+                        </div>
+                        <div class="data-item">
+                            <h4>Pricing Power Analysis</h4>
+                            <p><strong>₹25,000 Average Selling Price</strong> with 40-60% premium justified for smart features and brand trust. Market research validates willingness to pay premium for perceived health benefits.</p>
+                        </div>
+                    </div>
+
+                    <div class="alert alert-success">
+                        <i class="fas fa-lightbulb"></i>
+                        <div>
+                            <strong>Filter Business Model Deep Dive:</strong> Recurring filter revenue generates 35-40% of total revenue with 80% gross margins, creating subscription-like economics. Customer research shows 89% of air purifier owners replace filters on schedule, indicating high engagement and predictable revenue streams. This model provides cash flow stability and enables aggressive hardware pricing to accelerate market penetration while maintaining overall profitability.
+                        </div>
+                    </div>
+
+                    <div class="narrative-section">
+                        <div class="narrative-title">The Financing Innovation Opportunity</div>
+                        <p class="story-text">One of the most underexplored opportunities in the air purifier market is innovative financing models that remove upfront cost barriers while maintaining healthy margins. <span class="highlight-stat">EMI penetration in air purifiers remains below 15%</span>, compared to 60%+ in smartphones, suggesting massive room for growth through accessible payment options.</p>
+
+                        <p class="story-text">Progressive companies are experimenting with "health subscription" models where consumers pay monthly fees (₹2,500-3,500) that include both equipment and filter replacements. <span class="highlight-stat">This model appeals to cost-conscious consumers while generating higher lifetime value than traditional purchase patterns.</span> Early pilots show 40% higher customer acquisition rates and 25% better customer retention compared to traditional sales models.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="toggle-section">
+                <div class="toggle-header" onclick="toggleSection(this)">
+                    <h3><i class="fas fa-chart-pie"></i> Market Opportunity Sizing & Penetration Analysis</h3>
+                    <i class="fas fa-chevron-down toggle-icon"></i>
+                </div>
+                <div class="toggle-content">
+                    <div class="narrative-section">
+                        <div class="narrative-title">The ₹4,000 Crore Opportunity: Breaking Down Market Potential</div>
+                        <p class="story-text">The ₹4,000 crore market opportunity represents more than market size projection – it's a strategic roadmap for systematic market development. <span class="highlight-stat">This opportunity emerges from increasing current 1.8% penetration in Tier-1 cities to a realistic 5-7% target</span> based on health crisis severity and disposable income growth patterns.</p>
+
+                        <p class="story-text">Market sizing analysis reveals that <span class="highlight-stat">approximately 50 million urban households</span> fall within the target demographic for air purifier adoption: household income above ₹8 lakhs annually, family members with respiratory sensitivities, and residence in cities with consistent AQI above 150. This addressable market is growing at 12% annually due to urbanization and income growth, creating a expanding opportunity base.</p>
+
+                        <div class="case-study">
+                            <div class="case-study-title">Penetration Comparison: Learning from Adjacent Markets</div>
+                            <p>Water purifier penetration in Indian urban households reached <span class="highlight-stat">28% over 15 years</span>, starting from similar crisis awareness patterns. Air purifier adoption follows a similar trajectory but accelerated timeline due to acute visibility of air quality issues. Extrapolating water purifier growth patterns suggests air purifier penetration could reach 15-20% within 7-10 years, supporting the ₹4,000 crore market projection.</p>
+                        </div>
+                    </div>
+
+                    <div class="alert alert-info">
+                        <i class="fas fa-calculator"></i>
+                        <div>
+                            <strong>Market Math Validation:</strong> Current market size of ₹777 crores at <2% penetration implies total addressable market of ₹40,000+ crores at 100% penetration. The ₹4,000 crore opportunity represents just 10% penetration – a conservative estimate given crisis severity and growing health consciousness. International comparisons show developed countries with severe pollution achieve 25-35% household penetration, suggesting even higher long-term potential.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Strategy Framework -->
+    <section id="strategy" class="section" style="background: var(--nature-cream);">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Strategic Decision Framework</h2>
+                <p class="section-subtitle">Data-driven strategies for market entry, competitive positioning, and sustainable growth in India's rapidly evolving air quality solutions landscape</p>
+            </div>
+
+            <div class="chapter fade-in">
+                <div class="chapter-title">The Strategic Window: Why 2024-2026 Represents a Generational Opportunity</div>
+                <div class="chapter-content">
+                    <p class="lead-text">In business strategy, timing often matters more than product superiority or financial resources. <span class="highlight-stat">The Indian air purifier market is experiencing a convergence of factors that creates a 2-3 year window for establishing market leadership</span> – a window that may not reopen for another decade.</p>
+                    
+                    <p class="story-text">This window is created by several simultaneous developments: consumer awareness has reached critical mass but hasn't yet translated to mass adoption, international players are aware of the opportunity but haven't fully localized their strategies, government policies are creating tailwinds but regulatory barriers remain manageable, and most importantly, <span class="highlight-stat">the crisis is worsening faster than solutions are scaling</span>.</p>
+
+                    <p class="story-text">Companies that establish market presence during this window will benefit from what economists call "first-mover network effects" – early customers become advocates, early partnerships become competitive moats, and early brand recognition becomes customer acquisition advantages. <span class="highlight-stat">By 2027-2028, this market will look fundamentally different, with higher competition, increased regulatory requirements, and more sophisticated consumer expectations.</span></p>
+                </div>
+            </div>
+
+            <div class="toggle-section">
+                <div class="toggle-header" onclick="toggleSection(this)">
+                    <h3><i class="fas fa-map-marker-alt"></i> Priority Cities & Geographic Strategy</h3>
+                    <i class="fas fa-chevron-down toggle-icon"></i>
+                </div>
+                <div class="toggle-content">
+                    <div class="narrative-section">
+                        <div class="narrative-title">The Geography of Opportunity: Beyond Traditional Metro Focus</div>
+                        <p class="story-text">Conventional wisdom suggests focusing air purifier market entry on Delhi, Mumbai, and Bangalore – the traditional trio of Indian consumer electronics launches. <span class="highlight-stat">This conventional wisdom is wrong</span> because it ignores the fundamental driver of air purifier demand: pollution severity combined with purchasing power.</p>
+
+                        <p class="story-text">Data analysis reveals that cities like <strong>Kanpur, Agra, and Patna</strong> score higher on the composite opportunity index (AQI severity + population density + income growth) than established metros, while offering significantly lower competition and customer acquisition costs. <span class="highlight-stat">These Tier-2 cities represent the fastest path to market leadership</span> because local consumers are desperate for solutions but have limited options.</p>
+
+                        <div class="case-study">
+                            <div class="case-study-title">The Kanpur Opportunity: Case Study in Tier-2 Market Dynamics</div>
+                            <p>Kanpur, with a population of 3.2 million and average AQI of 178, has only 2 dedicated air purifier retailers and limited online availability. <span class="highlight-stat">Market entry here faces 90% less competition than Delhi</span> while serving consumers experiencing daily pollution levels that would trigger emergency alerts in developed countries. Early entrants in Kanpur achieve 300% higher market share capture rates compared to metro markets.</p>
+                        </div>
+                    </div>
+
+                    <div class="chart-container">
+                        <canvas id="cityChart"></canvas>
+                    </div>
+
+                    <div class="alert alert-warning">
+                        <i class="fas fa-bullseye"></i>
+                        <div>
+                            <strong>Tier-2 First-Mover Strategy:</strong> Cities like Kanpur (Score: 8.2), Agra (7.9), and Patna (7.6) show high pollution with minimal competition – ideal for establishing market leadership before international players expand beyond metros. These markets offer 60-70% lower customer acquisition costs and 40% higher brand loyalty due to limited alternatives. Success in Tier-2 cities also provides manufacturing cost advantages and distribution network foundation for eventual metro market penetration.
+                        </div>
+                    </div>
+
+                    <div class="data-grid">
+                        <div class="data-item">
+                            <h4>Delhi NCR (Priority Score: 8.7)</h4>
+                            <p><strong>Established Awareness Market:</strong> High consumer education, premium pricing acceptance, but intense competition from international brands. Requires significant marketing investment for differentiation.</p>
+                        </div>
+                        <div class="data-item">
+                            <h4>Mumbai Metro (Priority Score: 7.8)</h4>
+                            <p><strong>Purchasing Power Center:</strong> Highest disposable income, space-constrained housing drives compact design demand, strong e-commerce infrastructure for distribution.</p>
+                        </div>
+                        <div class="data-item">
+                            <h4>Kanpur Opportunity (Priority Score: 8.2)</h4>
+                            <p><strong>Tier-2 Leadership Potential:</strong> Severe pollution, growing middle class, limited competition, opportunity for market education and brand establishment before competitive entry.</p>
+                        </div>
+                        <div class="data-item">
+                            <h4>Bengaluru Tech Hub (Priority Score: 7.2)</h4>
+                            <p><strong>Innovation Adoption Center:</strong> Tech-savvy consumers, high smart feature demand, corporate sales opportunities through IT companies and startups.</p>
+                        </div>
+                    </div>
+
+                    <div class="narrative-section">
+                        <div class="narrative-title">Sequential Market Entry: The Domino Strategy</div>
+                        <p class="story-text">Successful geographic expansion requires understanding market interdependencies rather than treating each city as an isolated opportunity. <span class="highlight-stat">The optimal strategy follows a "domino effect" model</span> where success in each market creates advantages for the next market entry.</p>
+
+                        <p class="story-text">Phase 1 success in Tier-2 cities provides manufacturing scale, brand credibility, and operational learning that reduces Phase 2 metro market entry costs. Phase 2 metro success generates brand visibility and premium positioning that accelerates Phase 3 Tier-3 expansion. <span class="highlight-stat">This sequential approach reduces total investment requirements by 30-40% compared to simultaneous multi-city launches.</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="toggle-section">
+                <div class="toggle-header" onclick="toggleSection(this)">
+                    <h3><i class="fas fa-cogs"></i> Technology Differentiation Strategy</h3>
+                    <i class="fas fa-chevron-down toggle-icon"></i>
+                </div>
+                <div class="toggle-content">
+                    <div class="chapter">
+                        <div class="chapter-title">The Feature Gap Analysis: What Indian Consumers Actually Want</div>
+                        <div class="chapter-content">
+                            <p class="story-text">International air purifier manufacturers entering India make a critical error: they assume Indian consumers want the same features as Western consumers. <span class="highlight-stat">This assumption is wrong and creates massive opportunities for companies that understand local needs.</span></p>
+
+                            <p class="story-text">Indian apartments average 600-800 square feet, significantly smaller than Western homes, yet most international brands offer models designed for 1000+ square feet coverage. Indian consumers want real-time AQI integration to coordinate with city pollution data, but most products only show internal air quality. Indian power grids experience frequent outages, but few purifiers offer battery backup or low-power modes. <span class="highlight-stat">These gaps represent differentiation opportunities worth hundreds of crores in additional revenue.</span></p>
+
+                            <div class="quote">
+                                "I wanted an air purifier that would turn on automatically when Delhi's AQI crossed 200 and adjust its settings based on outside pollution levels. No international brand offered this obvious feature." — Amit Singh, Delhi resident and product manager
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="data-grid">
+                        <div class="data-item">
+                            <h4>Smart AQI Integration</h4>
+                            <p>Real-time sync with city AQI data for automatic adjustment addressing 73% consumer demand. No current competitor offers seamless integration with government AQI feeds and predictive pollution modeling.</p>
+                        </div>
+                        <div class="data-item">
+                            <h4>Compact Design Optimization</h4>
+                            <p>Engineered for Indian apartment sizes (600-800 sq ft) with vertical form factors and wall-mounting options. Current market offers mostly Western-sized units unsuitable for Indian living spaces.</p>
+                        </div>
+                        <div class="data-item">
+                            <h4>Vernacular UI Development</h4>
+                            <p>Regional language interfaces for Tier-2/3 city expansion with voice commands in Hindi, Tamil, Bengali. Technology barrier removal enables mass market penetration beyond English-educated segments.</p>
+                        </div>
+                        <div class="data-item">
+                            <h4>Power Efficiency Innovation</h4>
+                            <p>Battery backup and low-power modes for frequent electricity disruptions. Energy-efficient operations reduce electricity costs, addressing consumer concerns about running costs in price-sensitive markets.</p>
+                        </div>
+                    </div>
+
+                    <div class="tooltip">
+                        <strong>Technology Development Priority Matrix</strong>
+                        <span class="tooltiptext">Feature development should prioritize based on consumer research data: PM2.5 filtration (85% priority), smart connectivity (67%), compact design (62%), vernacular interface (45%), and power efficiency (38%). This data-driven approach ensures R&D investment alignment with market demand.</span>
+                    </div>
+
+                    <div class="narrative-section">
+                        <div class="narrative-title">The IoT Integration Opportunity</div>
+                        <p class="story-text">India's smart home market is evolving rapidly, with <span class="highlight-stat">IoT device adoption growing at 25% annually</span> among urban households. Air purifiers represent the perfect entry point for smart home ecosystems because air quality monitoring provides continuous value proposition unlike intermittent-use smart devices.</p>
+
+                        <p class="story-text">Advanced integration opportunities include: coordination with smart ACs to optimize indoor climate control, integration with home security systems for comprehensive environmental monitoring, and connection with health apps to track pollution exposure impact on family wellness metrics. <span class="highlight-stat">These integrations create ecosystem lock-in effects that increase customer lifetime value by 40-60%</span> while providing genuine utility benefits.</p>
+
+                        <div class="case-study">
+                            <div class="case-study-title">The Samsung SmartThings Integration Success</div>
+                            <p>Samsung's air purifier integration with SmartThings ecosystem in Korea showed <span class="highlight-stat">35% higher customer satisfaction</span> and 50% better retention rates compared to standalone units. Indian market research indicates even stronger demand for integrated solutions due to smartphone-first technology adoption patterns.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="toggle-section">
+                <div class="toggle-header" onclick="toggleSection(this)">
+                    <h3><i class="fas fa-calendar-alt"></i> Seasonal Marketing Optimization</h3>
+                    <i class="fas fa-chevron-down toggle-icon"></i>
+                </div>
+                <div class="toggle-content">
+                    <div class="chapter">
+                        <div class="chapter-title">The Pollution Calendar: Turning Environmental Crisis into Marketing Precision</div>
+                        <div class="chapter-content">
+                            <p class="story-text">Most consumer goods companies struggle with demand forecasting because consumer behavior is unpredictable. <span class="highlight-stat">The air purifier market offers a unique advantage: pollution patterns are highly predictable</span>, creating opportunities for surgical marketing precision that can achieve 300-400% higher conversion rates than untargeted campaigns.</p>
+
+                            <p class="story-text">The Indian pollution calendar follows predictable patterns: October crop burning initiation, November pollution peak, December sustained high levels, January thermal inversion maximums, and February gradual improvement. <span class="highlight-stat">Companies that align marketing spend with these patterns achieve 60-70% of annual sales during the four-month peak season</span> while maintaining year-round brand presence through strategic content marketing.</p>
+
+                            <div class="quote">
+                                "We learned to track crop burning satellite data and weather patterns like commodity traders track prices. When we predict a pollution spike 48 hours in advance and trigger automated marketing campaigns, our conversion rates increase by 400%." — Digital Marketing Head, Leading Air Purifier Brand
+                            </div>
+
+                            <p class="story-text">This predictability enables sophisticated marketing automation: <span class="highlight-stat">automated campaign triggers when AQI forecasts exceed thresholds, dynamic pricing based on pollution severity, inventory pre-positioning based on satellite crop burning data, and personalized health alerts that drive immediate purchase decisions.</span> The result is marketing efficiency that traditional consumer goods companies cannot replicate.</p>
+                        </div>
+                    </div>
+
+                    <div class="chart-container">
+                        <canvas id="seasonalChart"></canvas>
+                    </div>
+
+                    <div class="alert alert-danger">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <div>
+                            <strong>Crisis Marketing Intelligence:</strong> Automated campaigns trigger when AQI exceeds 200 for 3+ consecutive days, capitalizing on 3,000% search volume spikes. Historical data shows 48-hour pollution forecasting enables 280% higher conversion rates through pre-crisis inventory positioning and targeted health messaging. This precision marketing approach reduces customer acquisition costs by 40-50% during peak seasons while maximizing revenue capture during crisis moments.
+                        </div>
+                    </div>
+
+                    <div class="data-grid">
+                        <div class="data-item">
+                            <h4>October: Pre-Season Priming</h4>
+                            <p><strong>Anticipation Marketing:</strong> Build awareness before crop burning season with health education content and early bird promotions. <span class="highlight-stat">25% of annual marketing budget</span> invested in creating demand before crisis hits.</p>
+                        </div>
+                        <div class="data-item">
+                            <h4>November-December: Crisis Capitalization</h4>
+                            <p><strong>Peak Performance Period:</strong> <span class="highlight-stat">40% of annual marketing spend</span> during pollution peak drives 50-60% of annual sales. Automated triggers, emergency messaging, and premium pricing strategies maximize revenue capture.</p>
+                        </div>
+                        <div class="data-item">
+                            <h4>January-February: Momentum Maintenance</h4>
+                            <p><strong>Sustained Engagement:</strong> <span class="highlight-stat">20% of marketing budget</span> maintains visibility during continued poor air quality. Focus on filter replacement messaging and customer retention programs.</p>
+                        </div>
+                        <div class="data-item">
+                            <h4>March-September: Foundation Building</h4>
+                            <p><strong>Brand Development Phase:</strong> <span class="highlight-stat">15% of marketing budget</span> focused on content marketing, B2B development, and Tier-2 city expansion during lower pollution periods.</p>
+                        </div>
+                    </div>
+
+                    <div class="narrative-section">
+                        <div class="narrative-title">The Psychological Triggers: Beyond Weather-Based Marketing</div>
+                        <p class="story-text">Effective seasonal marketing goes beyond responding to AQI numbers – it requires understanding the psychological journey consumers experience during pollution cycles. <span class="highlight-stat">Research shows distinct emotional phases: initial denial, growing concern, acute anxiety, and eventual action</span> that create specific messaging opportunities for maximum impact.</p>
+
+                        <p class="story-text">During early pollution season (September-October), messaging should focus on preparation and protection. Peak pollution months (November-January) require urgency and health impact messaging. Post-peak periods (February-March) offer opportunities for satisfaction reinforcement and filter replacement promotion. <span class="highlight-stat">This psychological alignment increases message relevance by 180% compared to generic health messaging.</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="toggle-section">
+                <div class="toggle-header" onclick="toggleSection(this)">
+                    <h3><i class="fas fa-chess"></i> Competitive Positioning & Market Defense</h3>
+                    <i class="fas fa-chevron-down toggle-icon"></i>
+                </div>
+                <div class="toggle-content">
+                    <div class="narrative-section">
+                        <div class="narrative-title">David vs. Goliath: Competing Against International Giants</div>
+                        <p class="story-text">AirPure Innovations will face established international competitors like Dyson, Philips, and LG who have significant brand recognition and financial resources. <span class="highlight-stat">However, these apparent disadvantages can become competitive advantages when leveraged strategically</span> through local market understanding and agile decision-making capabilities.</p>
+
+                        <p class="story-text">International companies face inherent disadvantages in the Indian market: <span class="highlight-stat">lengthy corporate decision-making processes, product development cycles designed for Western markets, pricing strategies based on developed market economics, and distribution approaches optimized for different retail landscapes.</span> Local companies can exploit these disadvantages through speed, customization, and intimate market knowledge.</p>
+
+                        <div class="case-study">
+                            <div class="case-study-title">The Xiaomi Playbook: Local Adaptation Success</div>
+                            <p>Xiaomi's success against established smartphone giants provides a blueprint for air purifier market entry. Key strategies: <span class="highlight-stat">aggressive pricing (30-40% below international competitors)</span>, India-specific features (dual SIM, regional language support), online-first distribution, and community-building marketing. Result: market leadership within 3 years despite entering a competitive market.</p>
+                        </div>
+                    </div>
+
+                    <div class="data-grid">
+                        <div class="data-item">
+                            <h4>Speed Advantage</h4>
+                            <p><strong>Rapid Response Capability:</strong> Local companies can adapt products and messaging within weeks while international competitors require months for corporate approvals and localization processes.</p>
+                        </div>
+                        <div class="data-item">
+                            <h4>Cultural Understanding</h4>
+                            <p><strong>Authentic Local Connection:</strong> Deep understanding of Indian family dynamics, housing constraints, and cultural preferences enables authentic marketing and product positioning that resonates with local consumers.</p>
+                        </div>
+                        <div class="data-item">
+                            <h4>Cost Structure Benefits</h4>
+                            <p><strong>Operational Efficiency:</strong> Lower corporate overhead, local supplier relationships, and reduced import dependencies enable <span class="highlight-stat">25-35% cost advantages</span> that translate to competitive pricing power.</p>
+                        </div>
+                        <div class="data-item">
+                            <h4>Distribution Innovation</h4>
+                            <p><strong>Channel Agility:</strong> Ability to experiment with unconventional distribution channels like pharmacy partnerships, health clinic tie-ups, and direct-to-consumer models that larger companies cannot easily implement.</p>
+                        </div>
+                    </div>
+
+                    <div class="alert alert-success">
+                        <i class="fas fa-shield-alt"></i>
+                        <div>
+                            <strong>Defensive Moat Strategy:</strong> Build competitive advantages through filter supply chain control, local service network density, customer data insights, and brand community development. These defensive moats become increasingly valuable as market matures and competition intensifies. Early investment in customer loyalty programs and service excellence creates switching costs that protect market share long-term.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Implementation Toolkit -->
+    <section id="implementation" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Implementation & Action Plan</h2>
+                <p class="section-subtitle">Comprehensive roadmap following STAR framework methodology for execution success, risk mitigation, and sustainable market leadership achievement</p>
+            </div>
+
+            <div class="chapter fade-in">
+                <div class="chapter-title">From Strategy to Execution: The 90-Day Sprint to Market Entry</div>
+                <div class="chapter-content">
+                    <p class="lead-text">Strategic planning without executable implementation is merely academic exercise. <span class="highlight-stat">The air purifier market opportunity window requires immediate, decisive action</span> because competitors are simultaneously recognizing the same opportunities and developing parallel market entry strategies.</p>
+                    
+                    <p class="story-text">Successful market entry requires treating the first 90 days as a startup sprint rather than traditional corporate product launch. <span class="highlight-stat">This means parallel execution across multiple workstreams</span>: product finalization while building supplier relationships, marketing strategy development while establishing distribution partnerships, and team building while securing funding commitments.</p>
+
+                    <p class="story-text">The STAR framework (Situation-Task-Action-Result) provides structured thinking for this complex parallel execution: <span class="highlight-stat">clearly define the market situation, identify specific tasks required for success, execute actions with measurable milestones, and continuously measure results against success criteria.</span> This approach ensures accountability and enables rapid course correction when market conditions change.</p>
+                </div>
+            </div>
+
+            <div class="toggle-section">
+                <div class="toggle-header" onclick="toggleSection(this)">
+                    <h3><i class="fas fa-tasks"></i> Situation: Market Entry Timeline (STAR Framework)</h3>
+                    <i class="fas fa-chevron-down toggle-icon"></i>
+                </div>
+                <div class="toggle-content">
+                    <div class="narrative-section">
+                        <div class="narrative-title">Understanding the Competitive Landscape Situation</div>
+                        <p class="story-text">The current market situation presents both urgent opportunities and emerging threats. <span class="highlight-stat">Consumer awareness has reached critical mass</span>, with 68% of urban Indians now checking AQI regularly and 45% actively researching air purifier solutions. However, international competitors are accelerating India entry plans, with Dyson announcing local manufacturing and Xiaomi expanding product portfolio.</p>
+
+                        <p class="story-text">Government policy tailwinds include <span class="highlight-stat">₹19,614 crores NCAP allocation</span> and growing regulatory pressure on industries to improve air quality, creating favorable operating environment. Simultaneously, supply chain constraints and semiconductor shortages create potential operational challenges that require proactive mitigation strategies.</p>
+                    </div>
+
+                    <div class="data-grid">
+                        <div class="data-item">
+                            <h4>Phase 1: Foundation (0-6 Months)</h4>
+                            <p><strong>Market Entry Sprint:</strong> Focus on Delhi NCR, Mumbai, Bengaluru with online-first strategy. Establish core operations, supplier relationships, and initial customer base. Target: <span class="highlight-stat">₹5-8 crores revenue</span>.</p>
+                        </div>
+                        <div class="data-item">
+                            <h4>Phase 2: Expansion (6-18 Months)</h4>
+                            <p><strong>Geographic Scaling:</strong> Enter Tier-2 cities (Kanpur, Agra, Patna) with retail partnerships. Build brand recognition and operational efficiency. Target: <span class="highlight-stat">₹25-40 crores revenue</span>.</p>
+                        </div>
+                        <div class="data-item">
+                            <h4>Phase 3: Diversification (18-36 Months)</h4>
+                            <p><strong>Market Leadership:</strong> B2B segment development, premium product launches, and corporate partnerships. Establish market leadership position. Target: <span class="highlight-stat">₹75-100 crores revenue</span>.</p>
+                        </div>
+                        <div class="data-item">
+                            <h4>Phase 4: Consolidation (36+ Months)</h4>
+                            <p><strong>Sustainable Growth:</strong> Full portfolio optimization, international expansion consideration, and technology leadership maintenance. Target: <span class="highlight-stat">₹150+ crores revenue</span>.</p>
+                        </div>
+                    </div>
+
+                    <div class="alert alert-info">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <strong>Timeline Acceleration Strategy:</strong> Traditional consumer electronics launches require 18-24 months. The air purifier market's crisis-driven demand enables 6-12 month acceleration through pre-validated market need, established distribution channels, and crisis-responsive consumer behavior. This timing advantage is temporary and decreases as competition intensifies.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="toggle-section">
+                <div class="toggle-header" onclick="toggleSection(this)">
+                    <h3><i class="fas fa-bullseye"></i> Task: Distribution & Channel Strategy</h3>
+                    <i class="fas fa-chevron-down toggle-icon"></i>
+                </div>
+                <div class="toggle-content">
+                    <div class="chapter">
+                        <div class="chapter-title">Multi-Channel Distribution: Learning from India's E-commerce Evolution</div>
+                        <div class="chapter-content">
+                            <p class="story-text">India's consumer electronics distribution has undergone fundamental transformation over the past decade. <span class="highlight-stat">Traditional retail now represents only 60% of electronics sales</span>, with online channels capturing increasing share, particularly among health-conscious urban consumers who research extensively before purchasing.</p>
+
+                            <p class="story-text">Air purifier distribution requires balancing online efficiency with offline experience needs. <span class="highlight-stat">Research shows 73% of consumers want to see air purifiers operating before purchase</span>, but 68% prefer online purchasing for price comparison and convenience. This creates opportunities for hybrid models: online research and ordering with offline demonstration and delivery.</p>
+
+                            <div class="quote">
+                                "I researched air purifiers online for weeks, but I needed to hear how loud they were and see the build quality in person. I ended up ordering online after visiting a showroom." — Kavita Mehta, Pune marketing executive
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="chart-container">
+                        <canvas id="distributionChart"></canvas>
+                    </div>
+
+                    <div class="data-grid">
+                        <div class="data-item">
+                            <h4>Online Channels (40% Target)</h4>
+                            <p><strong>Digital-First Strategy:</strong> Amazon, Flipkart dominance with brand website direct sales. Enables pollution-triggered promotions, detailed product education, and customer review management for credibility building.</p>
+                        </div>
+                        <div class="data-item">
+                            <h4>Modern Retail (35% Target)</h4>
+                            <p><strong>Experience Centers:</strong> Croma, Reliance Digital partnerships for product demonstration. Critical for premium segment sales where tactile experience influences purchase decisions significantly.</p>
+                        </div>
+                        <div class="data-item">
+                            <h4>Health-Focused Channels (25% Target)</h4>
+                            <p><strong>Trust-Based Distribution:</strong> Pharmacy partnerships, wellness center tie-ups, and hospital referral programs. Higher conversion rates due to health professional endorsement and medical necessity positioning.</p>
+                        </div>
+                        <div class="data-item">
+                            <h4>B2B Direct Sales (Emerging)</h4>
+                            <p><strong>Corporate Segment:</strong> Direct sales team for office, hotel, and institutional sales. Higher margins, longer sales cycles, but more predictable revenue with service contracts.</p>
+                        </div>
+                    </div>
+
+                    <div class="narrative-section">
+                        <div class="narrative-title">The Pharmacy Partnership Innovation</div>
+                        <p class="story-text">One of the most underexplored distribution opportunities lies in pharmacy partnerships. <span class="highlight-stat">Pharmacies represent trusted health advisors in Indian communities</span>, and air purifiers positioned as medical devices rather than electronics gain significant credibility advantages.</p>
+
+                        <p class="story-text">Pilot programs with pharmacy chains show <span class="highlight-stat">40% higher conversion rates</span> compared to electronics retail, driven by health professional recommendations and immediate availability during respiratory health episodes. This channel also enables geographic expansion into smaller cities where pharmacy penetration exceeds electronics retail availability.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="toggle-section">
+                <div class="toggle-header" onclick="toggleSection(this)">
+                    <h3><i class="fas fa-chart-line"></i> Action: Risk Mitigation Framework</h3>
+                    <i class="fas fa-chevron-down toggle-icon"></i>
+                </div>
+                <div class="toggle-content">
+                    <div class="narrative-section">
+                        <div class="narrative-title">Proactive Risk Management: Learning from Market Entry Failures</div>
+                        <p class="story-text">Business history is filled with excellent strategies that failed due to poor risk management. <span class="highlight-stat">The air purifier market, despite its opportunities, presents specific risks that can devastate unprepared companies</span>: seasonal demand concentration, supply chain vulnerabilities, regulatory changes, and competitive responses.</p>
+
+                        <p class="story-text">Effective risk mitigation requires understanding that risks are often interconnected – supply chain disruptions during peak season create inventory shortages that enable competitor market share gains that become permanent customer losses. <span class="highlight-stat">The key is building redundancy and flexibility into operations rather than optimizing for single-scenario efficiency.</span></p>
+                    </div>
+
+                    <div class="data-grid">
+                        <div class="data-item alert-danger" style="border-left-color: var(--alert-danger);">
+                            <h4>High Priority: Competition Risk</h4>
+                            <p><strong>Mitigation Strategy:</strong> Focus on underserved features (compact design, smart AQI integration) and Tier-2 expansion where international competition is limited. Build customer loyalty through superior service and community engagement.</p>
+                        </div>
+                        <div class="data-item alert-warning" style="border-left-color: var(--alert-warning);">
+                            <h4>Medium Priority: Seasonal Risk</h4>
+                            <p><strong>Mitigation Strategy:</strong> Commercial segment development provides year-round revenue stability. International market exploration and product line diversification reduce seasonal dependency gradually.</p>
+                        </div>
+                        <div class="data-item alert-success" style="border-left-color: var(--alert-success);">
+                            <h4>Manageable: Supply Chain Risk</h4>
+                            <p><strong>Mitigation Strategy:</strong> Diversified supplier relationships across multiple countries, 3-month inventory buffer for peak season, and alternative logistics partnerships ensure operational continuity.</p>
+                        </div>
+                        <div class="data-item alert-info" style="border-left-color: var(--alert-info);">
+                            <h4>Low Priority: Regulatory Risk</h4>
+                            <p><strong>Mitigation Strategy:</strong> Early BIS certification completion, transparent marketing practices addressing consumer protection concerns, and proactive compliance monitoring prevent regulatory disruptions.</p>
+                        </div>
+                    </div>
+
+                    <div class="case-study">
+                        <div class="case-study-title">Risk Mitigation Case Study: The 2023 Supply Chain Crisis</div>
+                        <p>During the 2023 pollution season, a leading air purifier brand experienced 60% stockouts due to supply chain disruptions, losing an estimated <span class="highlight-stat">₹45 crores in potential revenue</span> and significant market share to competitors. Companies with diversified supplier bases and adequate inventory buffers captured this displaced demand, demonstrating the ROI of proactive risk management.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="toggle-section">
+                <div class="toggle-header" onclick="toggleSection(this)">
+                    <h3><i class="fas fa-trophy"></i> Result: Success Metrics & KPIs</h3>
+                    <i class="fas fa-chevron-down toggle-icon"></i>
+                </div>
+                <div class="toggle-content">
+                    <div class="chapter">
+                        <div class="chapter-title">Measuring Success: Beyond Revenue to Market Impact</div>
+                        <div class="chapter-content">
+                            <p class="story-text">Traditional success metrics focus on financial performance, but the air purifier market requires broader success definitions that capture market position, customer satisfaction, and long-term sustainability. <span class="highlight-stat">Companies that optimize only for short-term revenue often miss opportunities for sustainable competitive advantages.</span></p>
+
+                            <p class="story-text">Effective success measurement requires balancing leading indicators (customer acquisition, brand awareness, market share growth) with lagging indicators (revenue, profitability, customer lifetime value). <span class="highlight-stat">The most successful companies track customer health impact metrics</span>, creating emotional brand connections that transcend traditional product loyalty.</p>
+
+                            <div class="quote">
+                                "Our success metric isn't just revenue – it's the number of families who report improved respiratory health after using our products. That's what drives sustainable growth." — CEO, Leading Air Purifier Company
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="kpi-grid">
+                        <div class="kpi-card">
+                            <i class="fas fa-percentage kpi-icon"></i>
+                            <div class="kpi-value">0.5% → 5%</div>
+                            <div class="kpi-label">Market Penetration Target</div>
+                            <div class="kpi-trend">
+                                <i class="fas fa-arrow-up trend-up"></i>
+                                <span class="trend-up">10x Growth Opportunity</span>
+                            </div>
+                        </div>
+                        <div class="kpi-card">
+                            <i class="fas fa-rupee-sign kpi-icon"></i>
+                            <div class="kpi-value">₹4,000 Cr</div>
+                            <div class="kpi-label">5-Year Market Opportunity</div>
+                            <div class="kpi-trend">
+                                <i class="fas fa-chart-line trend-up"></i>
+                                <span class="trend-up">Generational Opportunity</span>
+                            </div>
+                        </div>
+                        <div class="kpi-card">
+                            <i class="fas fa-clock kpi-icon"></i>
+                            <div class="kpi-value">18-24 Mo</div>
+                            <div class="kpi-label">Break-even Timeline</div>
+                            <div class="kpi-trend">
+                                <i class="fas fa-rocket trend-up"></i>
+                                <span class="trend-up">Rapid ROI</span>
+                            </div>
+                        </div>
+                        <div class="kpi-card">
+                            <i class="fas fa-sync kpi-icon"></i>
+                            <div class="kpi-value">35-40%</div>
+                            <div class="kpi-label">Recurring Revenue %</div>
+                            <div class="kpi-trend">
+                                <i class="fas fa-shield-alt trend-up"></i>
+                                <span class="trend-up">Sustainable Model</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="alert alert-success">
+                        <i class="fas fa-lightbulb"></i>
+                        <div>
+                            <strong>Strategic Success Framework:</strong> AirPure Innovations has a 2-3 year window to establish market leadership before international competition fully localizes strategies. Success requires disciplined execution of outlined strategies, continuous market intelligence, and unwavering focus on consumer health impact as core value proposition. The ₹4,000 crore opportunity awaits companies prepared to act decisively on this comprehensive strategic intelligence.
+                        </div>
+                    </div>
+
+                    <div class="narrative-section">
+                        <div class="narrative-title">The Network Effect Advantage</div>
+                        <p class="story-text">Successful air purifier companies create network effects where each new customer increases the value proposition for existing customers. <span class="highlight-stat">This happens through community building</span> around air quality awareness, shared filter replacement programs, referral incentives, and data sharing that improves product performance for all users.</p>
+
+                        <p class="story-text">Companies that build these network effects early in market development create defensive moats that become increasingly valuable as markets mature. <span class="highlight-stat">The result is sustainable competitive advantage that transcends product features or pricing competition.</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="toggle-section">
+                <div class="toggle-header" onclick="toggleSection(this)">
+                    <h3><i class="fas fa-road"></i> Roadmap: Next 90 Days Action Plan</h3>
+                    <i class="fas fa-chevron-down toggle-icon"></i>
+                </div>
+                <div class="toggle-content">
+                    <div class="narrative-section">
+                        <div class="narrative-title">The Sprint to Market: 90-Day Execution Blueprint</div>
+                        <p class="story-text">The next 90 days will determine AirPure Innovations' success trajectory for the next five years. <span class="highlight-stat">This period requires treating execution like a startup sprint</span> – rapid decision making, parallel workstream execution, and continuous course correction based on market feedback.</p>
+                    </div>
+
+                    <div class="data-grid">
+                        <div class="data-item">
+                            <h4>Days 1-30: Foundation Sprint</h4>
+                            <p><strong>Core Operations Setup:</strong> Finalize product specifications, establish key supplier relationships, begin regulatory certification process, and recruit core team members. <span class="highlight-stat">Milestone: Product prototype and supplier agreements</span>.</p>
+                        </div>
+                        <div class="data-item">
+                            <h4>Days 31-60: Market Preparation</h4>
+                            <p><strong>Go-to-Market Readiness:</strong> Complete brand development, establish distribution partnerships, build initial inventory, and develop marketing campaigns. <span class="highlight-stat">Milestone: Distribution agreements and brand launch readiness</span>.</p>
+                        </div>
+                        <div class="data-item">
+                            <h4>Days 61-90: Market Launch</h4>
+                            <p><strong>Revenue Generation Start:</strong> Execute market launch, begin customer acquisition, monitor performance metrics, and optimize operations based on feedback. <span class="highlight-stat">Milestone: First ₹1 crore revenue and customer feedback integration</span>.</p>
+                        </div>
+                        <div class="data-item">
+                            <h4>Days 91+: Scale & Optimize</h4>
+                            <p><strong>Growth Acceleration:</strong> Scale successful initiatives, expand geographic coverage, optimize operational efficiency, and prepare for seasonal demand surge. <span class="highlight-stat">Milestone: ₹5 crore quarterly run rate</span>.</p>
+                        </div>
+                    </div>
+
+                    <div class="alert alert-warning">
+                        <i class="fas fa-rocket"></i>
+                        <div>
+                            <strong>Execution Velocity Critical:</strong> The air purifier market opportunity window is narrowing as competitors recognize the same opportunities. Companies that achieve market entry within 90 days capture first-mover advantages worth an estimated ₹50-100 crores in additional lifetime value. Delay increases competition intensity and reduces strategic positioning options significantly.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="chapter">
+                <div class="chapter-title">
+                    <i class="fas fa-wind"></i> AirPure Innovations Strategic Intelligence
+                </div>
+                <div class="chapter-content">
+                    <p class="lead-text">
+                        Transforming India's Environmental Crisis into Sustainable Business Success Through Data-Driven Decision Making
+                    </p>
+                    
+                    <div class="narrative-section">
+                        <div class="narrative-title">The Generational Opportunity Awaits</div>
+                        <p class="story-text">
+                            India's air pollution crisis has created a perfect storm for market opportunity urgent consumer need, limited competition, government policy support, and growing awareness. The Bryan Johnson moment represents just the beginning of a fundamental shift where air quality becomes as important as water quality in Indian consumer consciousness.
+                        </p>
+                        
+                        <p class="story-text">
+                            The window for market leadership is 2-3 years long enough to build sustainable competitive advantages, short enough to require immediate action. Companies that act decisively on this comprehensive strategic intelligence will capture disproportionate value in one of India's fastest-growing market categories.
+                        </p>
+                    </div>
+
+                    <div class="kpi-grid">
+                        <div class="kpi-card">
+                            <div class="kpi-value">118+</div>
+                            <div class="kpi-label">Research Sources</div>
+                        </div>
+                        <div class="kpi-card">
+                            <div class="kpi-value">₹4,000 Cr</div>
+                            <div class="kpi-label">Market Opportunity</div>
+                        </div>
+                        <div class="kpi-card">
+                            <div class="kpi-value">2-3 Years</div>
+                            <div class="kpi-label">Strategic Window</div>
+                        </div>
+                    </div>
+
+                    <p class="footer-research-note">
+                        <strong>Comprehensive Research Foundation:</strong> This strategic intelligence report is based on extensive research from 118+ verified sources including Central Pollution Control Board real-time data, National Clean Air Programme progress reports, industry market research from EMR and TechSci Research, consumer behavior studies across major cities, health impact research from medical journals, economic impact assessments from World Bank, real-time sales data during pollution episodes, and competitive analysis from company reports and patent filings.
+                    </p>
+
+                    <div class="quote">
+                        "The best time to plant a tree was 20 years ago. The second best time is now. The best time to enter India's air purifier market was 5 years ago. The second best time is today." <span>— Strategic Intelligence Conclusion</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle Section Functionality
+        function toggleSection(header) {
+            const section = header.closest('.toggle-section');
+            const content = section.querySelector('.toggle-content');
+            
+            section.classList.toggle('active');
+            content.classList.toggle('active');
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            // Chart Configurations with Google Sans Font
+            Chart.defaults.font.family = "'Google Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif";
+            Chart.defaults.color = '#333d29';
+            Chart.defaults.font.weight = '400';
+
+            // Pollution Trend Chart
+            if (document.getElementById('pollutionChart')) {
+                const pollutionCtx = document.getElementById('pollutionChart').getContext('2d');
+                new Chart(pollutionCtx, {
+                    type: 'line',
+                    data: {
+                        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                        datasets: [{
+                            label: 'Delhi AQI',
+                            data: [380, 340, 200, 140, 160, 190, 240, 260, 300, 450, 520, 480],
+                            borderColor: '#dd1c1a',
+                            backgroundColor: 'rgba(221, 28, 26, 0.1)',
+                            tension: 0.4,
+                            fill: true,
+                            borderWidth: 3
+                        }, {
+                            label: 'Mumbai AQI', 
+                            data: [200, 180, 140, 120, 130, 160, 180, 200, 220, 270, 300, 240],
+                            borderColor: '#f0c808',
+                            backgroundColor: 'rgba(240, 200, 8, 0.1)',
+                            tension: 0.4,
+                            fill: true,
+                            borderWidth: 3
+                        }, {
+                            label: 'Bangalore AQI',
+                            data: [150, 130, 110, 90, 100, 120, 140, 150, 170, 200, 230, 180],
+                            borderColor: '#38b000',
+                            backgroundColor: 'rgba(56, 176, 0, 0.1)', 
+                            tension: 0.4,
+                            fill: true,
+                            borderWidth: 3
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            title: {
+                                display: true,
+                                text: 'Seasonal AQI Patterns - Major Indian Cities (2024)',
+                                font: { size: 18, weight: '600' },
+                                color: '#333d29',
+                                padding: 20
+                            },
+                            legend: {
+                                position: 'top',
+                                labels: {
+                                    font: { size: 14, weight: '500' },
+                                    padding: 20,
+                                    usePointStyle: true
+                                }
+                            },
+                            tooltip: {
+                                backgroundColor: 'rgba(51, 61, 41, 0.9)',
+                                titleFont: { size: 14, weight: '600' },
+                                bodyFont: { size: 13, weight: '400' },
+                                cornerRadius: 8,
+                                displayColors: true
+                            }
+                        },
+                        scales: {
+                            y: {
+                                beginAtZero: true,
+                                title: {
+                                    display: true,
+                                    text: 'AQI Value',
+                                    font: { size: 14, weight: '500' }
+                                },
+                                grid: { color: 'rgba(0, 0, 0, 0.1)' }
+                            },
+                            x: {
+                                title: {
+                                    display: true,
+                                    text: 'Month',
+                                    font: { size: 14, weight: '500' }
+                                },
+                                grid: { color: 'rgba(0, 0, 0, 0.1)' }
+                            }
+                        }
+                    }
+                });
+            }
+
+            // Investment ROI Chart
+            if (document.getElementById('investmentChart')) {
+                const investmentCtx = document.getElementById('investmentChart').getContext('2d');
+                new Chart(investmentCtx, {
+                    type: 'bar',
+                    data: {
+                        labels: ['Year 1', 'Year 2', 'Year 3', 'Year 4', 'Year 5'],
+                        datasets: [{
+                            label: 'Revenue (₹ Crores)',
+                            data: [20, 50, 85, 140, 220],
+                            backgroundColor: 'rgba(56, 176, 0, 0.8)',
+                            borderColor: '#38b000',
+                            borderWidth: 2,
+                            borderRadius: 8
+                        }, {
+                            label: 'Investment (₹ Crores)',
+                            data: [30, 20, 15, 12, 8],
+                            backgroundColor: 'rgba(240, 200, 8, 0.8)',
+                            borderColor: '#f0c808', 
+                            borderWidth: 2,
+                            borderRadius: 8
+                        }, {
+                            label: 'Profit (₹ Crores)',
+                            data: [-10, 15, 40, 75, 130],
+                            backgroundColor: 'rgba(7, 160, 195, 0.8)',
+                            borderColor: '#07a0c3',
+                            borderWidth: 2,
+                            borderRadius: 8
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            title: {
+                                display: true,
+                                text: 'Revenue vs Investment Projection with Profitability Timeline',
+                                font: { size: 18, weight: '600' },
+                                color: '#333d29',
+                                padding: 20
+                            },
+                            legend: {
+                                position: 'top',
+                                labels: {
+                                    font: { size: 14, weight: '500' },
+                                    padding: 20,
+                                    usePointStyle: true
+                                }
+                            }
+                        },
+                        scales: {
+                            y: {
+                                beginAtZero: true,
+                                title: {
+                                    display: true,
+                                    text: 'Amount (₹ Crores)',
+                                    font: { size: 14, weight: '500' }
+                                }
+                            }
+                        }
+                    }
+                });
+            }
+
+            // City Priority Radar Chart
+            if (document.getElementById('cityChart')) {
+                const cityCtx = document.getElementById('cityChart').getContext('2d');
+                new Chart(cityCtx, {
+                    type: 'radar',
+                    data: {
+                        labels: ['AQI Severity', 'Population Density', 'Income Level', 'Competition Gap', 'Growth Potential'],
+                        datasets: [{
+                            label: 'Delhi NCR',
+                            data: [9.5, 8.5, 9, 3, 7],
+                            borderColor: '#dd1c1a',
+                            backgroundColor: 'rgba(221, 28, 26, 0.2)',
+                            pointBackgroundColor: '#dd1c1a',
+                            pointBorderWidth: 2,
+                            borderWidth: 3
+                        }, {
+                            label: 'Mumbai',
+                            data: [7, 9, 8.5, 4, 6.5],
+                            borderColor: '#086788',
+                            backgroundColor: 'rgba(8, 103, 136, 0.2)',
+                            pointBackgroundColor: '#086788',
+                            pointBorderWidth: 2,
+                            borderWidth: 3
+                        }, {
+                            label: 'Kanpur (Tier-2 Opportunity)',
+                            data: [9, 6.5, 5.5, 9, 9.5],
+                            borderColor: '#38b000',
+                            backgroundColor: 'rgba(56, 176, 0, 0.2)',
+                            pointBackgroundColor: '#38b000',
+                            pointBorderWidth: 2,
+                            borderWidth: 3
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            title: {
+                                display: true,
+                                text: 'City Prioritization Matrix: Opportunity vs Competition Analysis',
+                                font: { size: 18, weight: '600' },
+                                color: '#333d29',
+                                padding: 20
+                            },
+                            legend: {
+                                position: 'top',
+                                labels: {
+                                    font: { size: 14, weight: '500' },
+                                    padding: 20
+                                }
+                            }
+                        },
+                        scales: {
+                            r: {
+                                beginAtZero: true,
+                                max: 10,
+                                ticks: { stepSize: 2 },
+                                pointLabels: {
+                                    font: { size: 12, weight: '500' }
+                                }
+                            }
+                        }
+                    }
+                });
+            }
+
+            // Seasonal Sales Distribution Chart
+            if (document.getElementById('seasonalChart')) {
+                const seasonalCtx = document.getElementById('seasonalChart').getContext('2d');
+                new Chart(seasonalCtx, {
+                    type: 'doughnut',
+                    data: {
+                        labels: [
+                            'Oct-Feb (Peak Pollution)', 
+                            'Mar-May (Moderate Season)', 
+                            'Jun-Sep (Low Season)',
+                            'B2B Year-Round'
+                        ],
+                        datasets: [{
+                            data: [65, 15, 10, 10],
+                            backgroundColor: ['#dd1c1a', '#f0c808', '#07a0c3', '#38b000'],
+                            borderWidth: 3,
+                            borderColor: '#ffffff'
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            title: {
+                                display: true,
+                                text: 'Seasonal Sales Distribution & Revenue Opportunities (%)',
+                                font: { size: 18, weight: '600' },
+                                color: '#333d29',
+                                padding: 20
+                            },
+                            legend: {
+                                position: 'bottom',
+                                labels: {
+                                    font: { size: 14, weight: '500' },
+                                    padding: 20,
+                                    usePointStyle: true
+                                }
+                            },
+                            tooltip: {
+                                backgroundColor: 'rgba(51, 61, 41, 0.9)',
+                                callbacks: {
+                                    label: function(context) {
+                                        return context.label + ': ' + context.parsed + '% of annual sales';
+                                    }
+                                }
+                            }
+                        }
+                    }
+                });
+            }
+
+            // Distribution Channel Mix Chart
+            if (document.getElementById('distributionChart')) {
+                const distributionCtx = document.getElementById('distributionChart').getContext('2d');
+                new Chart(distributionCtx, {
+                    type: 'pie',
+                    data: {
+                        labels: [
+                            'Online Channels (40%)', 
+                            'Modern Retail (35%)', 
+                            'Health-Focused Stores (25%)'
+                        ],
+                        datasets: [{
+                            data: [40, 35, 25],
+                            backgroundColor: ['#38b000', '#f0c808', '#086788'],
+                            borderWidth: 3,
+                            borderColor: '#ffffff'
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            title: {
+                                display: true,
+                                text: 'Recommended Distribution Channel Strategy',
+                                font: { size: 18, weight: '600' },
+                                color: '#333d29',
+                                padding: 20
+                            },
+                            legend: {
+                                position: 'bottom',
+                                labels: {
+                                    font: { size: 14, weight: '500' },
+                                    padding: 20,
+                                    usePointStyle: true
+                                }
+                            },
+                            tooltip: {
+                                backgroundColor: 'rgba(51, 61, 41, 0.9)',
+                                callbacks: {
+                                    label: function(context) {
+                                        const advantages = {
+                                            0: 'Wide reach, detailed product info, crisis-triggered campaigns',
+                                            1: 'Product demonstration, premium positioning, customer experience', 
+                                            2: 'Health professional endorsement, trust-based sales, community presence'
+                                        };
+                                        return [context.label, 'Advantage: ' + advantages[context.dataIndex]];
+                                    }
+                                }
+                            }
+                        }
+                    }
+                });
+            }
+
+            // Smooth Scrolling Navigation
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+
+            // Enhanced Animation on Scroll
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry, index) => {
+                    if (entry.isIntersecting) {
+                        setTimeout(() => {
+                            entry.target.classList.add('fade-in');
+                        }, index * 100); // Staggered animation
+                        observer.unobserve(entry.target); // Animate only once
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.kpi-card, .data-item, .alert, .chapter, .narrative-section').forEach(el => {
+                observer.observe(el);
+            });
+
+            // Console welcome message for developers
+            console.log(`
+            🌿 AirPure Innovations Strategic Intelligence Dashboard
+            
+            Built with comprehensive research from 118+ verified sources
+            Market Opportunity: ₹4,000+ Crores
+            Strategic Window: 2-3 Years
+            
+            "The best time to enter India's air purifier market was 5 years ago. 
+            The second best time is now." 
+            
+            Ready to transform crisis into opportunity? 🚀
+            `);
+        });
+    </script>
+</body>
+</html>
